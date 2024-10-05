@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Geometric Invasion Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>		
+    <script type="module" src="/main.js"></script>
+
+		<div id="mainMenu" style="position: fixed; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; background: rgba(0, 0, 0, 0.5); z-index: 200;">
+			<img class="mainMenuBgd" src="mainMenuBgd.jpg">
+			<div class="gameTitle">
+				<div class="title">
+					<p class="firstWrd">GEOMETRIC</p>
+					<p class="secondWrd">INVASION</p>
+				</div>
+				<button id="playButton">P L A Y</button>
+				<div id="bestScore" style="color: white; font-size: 20px; margin-top: 20px;">Best Score: 000</div>
+			</div>
+		</div>
+		
+		<div id="hitTint"></div>
+
+    <div id="crosshair"></div>
+
+		<div id="healthBarContainer">
+			<div id="healthBar">100</div>
+		</div>	
+
+		<div id="scoreContainer">Score: 000</div>
+</body>
+</html>

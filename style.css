@@ -1,0 +1,144 @@
+body { 
+  margin: 0;
+}
+
+
+.mainMenuBgd {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+
+.gameTitle {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+
+
+.firstWrd {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF; 
+  background-color: #31ce0a;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 4px #406c0b;
+  border-radius: 2px;
+}
+
+
+.secondWrd {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, sans-serif; 
+  color: #FFFFFF; 
+  background-color: #e82a09;
+  border: none;
+  padding: 20px 20px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 4px #7a2718;
+  border-radius: 2px;
+}
+
+
+#playButton {
+  z-index: 999;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Arial, sans-serif;
+  color: #FFFFFF; 
+  background-color: #31ce0a; 
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px 4px #406c0b;
+  border-radius: 2px;
+}
+#playButton:hover {
+  background-color: #0eae33;
+}
+#playButton:active {
+  box-shadow: 0px 1px 0px 0px #0eae3399;
+}
+
+
+#crosshair {
+  position: fixed;
+  top: 50.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: solid grey 1px;
+  z-index: 100;
+  border-radius: 8px;
+}
+
+
+#hitTint {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.25); 
+    display: none; 
+    pointer-events: none; 
+    z-index: 100;
+    transition: 100ms;
+}
+
+
+#healthBarContainer {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+  height: 25px;
+  background-color: #555;
+  border-radius: 12px;
+  z-index: 101;
+}
+
+
+#healthBar {
+  height: 100%;
+  width: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+
+#scoreContainer {
+  position: fixed;
+  top: 20px;
+  left: 230px; 
+  color: white;
+  font-size: 20px;
+  z-index: 101;
+}
+
+
+#bestScore {
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(1, 100, 0, 1);
+}
